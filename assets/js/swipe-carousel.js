@@ -15,7 +15,7 @@ class SwipeCarousel extends Carousel{
    }
 
    _swipeStart(e) {
-    this._swipeStartX = e.changedTouches[0].pageX;   
+    this.swipeStartX = e.changedTouches[0].pageX;   
    }
 
 };

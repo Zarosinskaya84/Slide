@@ -151,12 +151,12 @@ body {
 .control-pause {
   display: block;
   color: transparent;
-  top: 40%;
-  left: 45%;
+  top: calc(50% - 10vh);
+  left: calc(50% - 10vh);
   transition: 1s;
   z-index: 3;
   
-
+  
   @include md-min {
     font-size: 20vh;
    

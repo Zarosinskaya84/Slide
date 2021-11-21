@@ -1,6 +1,6 @@
  class Carousel{
-    constructor(p)
-     {const settings = {...{containerID: '#carousel', slideID: '.slide', interval: 5000, isPlaying: true},...p};
+    constructor(p){
+     const settings = {...{containerID: '#carousel', slideID: '.slide', interval: 5000, isPlaying: true},...p};
               
     this.container = document.querySelector(settings.containerID);
     this.slides = this.container.querySelectorAll(settings.slideID);
@@ -76,7 +76,7 @@ _initIndicators () {
        
     }
     
-    _goToPrev () {
+    goToPrev () {
         this._goToNth(this.currentSlide - 1);
     
     }
@@ -138,7 +138,7 @@ pausePlay () {
 
  prev() {
     this._pause();
-    this._goToPrev();
+    this.goToPrev();
     
 }
 

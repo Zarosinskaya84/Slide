@@ -499,8 +499,8 @@ body {
 .control-pause {
   display: block;
   color: transparent;
-  top: 40%;
-  left: 45%;
+  top: calc(50% - 10vh);
+  left: calc(50% - 10vh);
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
