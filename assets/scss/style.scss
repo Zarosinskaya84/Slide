@@ -163,16 +163,13 @@ body {
   }
 
   @include md-sm {
-    font-size: 15vh;
-   
-    
+    font-size: 15vh; 
     
   }
 
   @include sm {
     font-size: 10vh;
-    
-    
+     
   }
 
   > span {

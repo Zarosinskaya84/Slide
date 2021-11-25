@@ -57,7 +57,7 @@ _initIndicators () {
 
       indicator.setAttribute('class', 'indicator');
         indicator.dataset.slideTo = `${i}`;
-        i === 0 &&  indicator.classList.add('active');    
+      if (i === 0) indicator.classList.add('active');    
         indicators.appendChild(indicator);
               
 }
@@ -108,7 +108,7 @@ _initIndicators () {
 
     if (target && target.classList.contains('indicator')) {
         this._pause();
-        this._gotoNth(+target.dataset.slideTo);
+        this._goToNth(+target.dataset.slideTo);
         
     }
 }
