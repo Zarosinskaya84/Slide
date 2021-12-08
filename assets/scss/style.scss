@@ -98,7 +98,6 @@ body {
 
 .indicators {
   position: absolute;
-  cursor: pointer;
   display: flex;
   gap: 10px;
   padding: 1em;
@@ -108,6 +107,7 @@ body {
   z-index: 2;
 }
 .indicator {
+  cursor: pointer;
   height: 5px;
   user-select: none;
   background-color: rgba($color: #0a0a0af5, $alpha: 0.5);
@@ -116,8 +116,6 @@ body {
     background-color: rgba($color: #ffffff, $alpha: 1);
     opacity: 1;
     z-index: 2;
-
-
   }
   @include md-min {
     width: 70px;
@@ -155,27 +153,22 @@ body {
   left: calc(50% - 10vh);
   transition: 1s;
   z-index: 3;
-  
-  
+
   @include md-min {
     font-size: 20vh;
-   
   }
 
   @include md-sm {
-    font-size: 15vh; 
-    
+    font-size: 15vh;
   }
 
   @include sm {
     font-size: 10vh;
-     
   }
 
   > span {
     opacity: 0;
     position: absolute;
-    
   }
 }
 
